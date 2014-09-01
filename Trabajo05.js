@@ -13,15 +13,15 @@ function numeros(){
 	 	var primo = primos(opr[i]);
 
 	 	if (par && primo) {
-	 		console.log("El Numero " + opr[i] + " es un numero par y  primo, ");
+	 		console.log("El Numero " + opr[i] + " es un numero par y  primo");
 	 	}else
 	 	{
 	 		if (par && !primo) {
-	 			console.log("El Numero " + opr[i] + " es un numero par, ");
+	 			console.log("El Numero " + opr[i] + " es un numero par");
 	 		}else
 	 		{
 	 			if (!par && primo){
-	 			console.log("El Numero " + opr[i] + " es un numero primo, ");
+	 			console.log("El Numero " + opr[i] + " es un numero primo");
 }
 	 		}
 
