@@ -9,22 +9,19 @@ function numeros(){
 	 console.log("RESULTADOS");
 
 	 for (var i = 0 ; i < 6; i++) {
-	 	var par = pares(opr[i]);
-	 	var primo = primos(opr[i]);
+	 	var par = pares(i);
+	 	var primo = primos(i);
 
 	 	if (par && primo) {
-	 		console.log("El Numero " + opr[i] + " es un numero par y  primo ");
+	 		console.log("El Numero " + opr[i] + " es un numero par y  primo, ");
 	 	}else
 	 	{
 	 		if (par && !primo) {
-	 			console.log("El Numero " + opr[i] + " es un numero par ");
+	 			console.log("El Numero " + opr[i] + " es par, ");
 	 		}else
 	 		{
-	 			if (!par && primo){
-	 			console.log("El Numero " + opr[i] + " es un numero primo ");
-}
+	 			console.log("El Numero " + opr[i] + " es primo, ");
 	 		}
-
 	 	}
 	 }
 }
@@ -41,7 +38,7 @@ function pares(num){
 
 function primos(num)
 {
-	if (num>=2) {
+	if (num>2) {
 		var cont = 2;
 		var resul = true;
 
