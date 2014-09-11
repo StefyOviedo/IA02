@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Juego Inteligencia Artificial</title>
+	<script src = "juego.js?a=2"></script>
+</head>
+<body background="fondo.jpg">
+
+
+<IMG SRC="JUEGO.gif" align="left" style="position:absolute;top: 30px;left: 280px; border-radius:15px 15px 15px 15px " >
+<IMG SRC="JUEGO1.gif" align="left" style="position:absolute;top: 90px;left: 350px; border-radius:15px 15px 15px 15px " >
+<IMG SRC="pensando.gif" align="left" style="position:absolute;top: 110px;left: 260px; border-radius:15px 15px 15px 15px " >
+<IMG SRC="bot.gif" align="left" style="position:absolute;top:120px;left: 880px; border-radius:15px 15px 15px 15px " >
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr>
+    	<td ><h1><IMG SRC="humano.gif" style="position:absolute;top: 240px;left: 180px; border-radius:15px 15px 15px 15px "> <span id = 'pun_1'style="position:absolute;top: 260px;left: 450px; border-radius:15px 15px 15px 15px ">0</span></h1></td>
+    	<td width="30%"><label for="select"></label>
+      		<select name="jugada_humano" id="jugada_humano" style="position:absolute;top: 230px;left: 480px; border-radius:15px 15px 15px 15px ">
+      			     <option value="1">Piedra</option>
+      			     <option value="2">Papel</option>
+      			     <option value="3">Tijera</option>
+      			     <option value="4">Lagarto</option>
+      			     <option value="5">Spock</option>
+    		</select>
+    	</td>
+  	</tr>
+  	<tr>
+    	<td><h1><IMG SRC="robot.gif" style="position:absolute;top: 240px;left: 780px; border-radius:15px 15px 15px 15px "> <span id = 'pun_2'style="position:absolute;top: 260px;left: 970px; border-radius:15px 15px 15px 15px ">0</span></h1></td>
+    	<td>
+    		<h1><div id = 'juega_pc'style="position:absolute;top: 380px;left: 550px; border-radius:15px 15px 15px 15px "></div></h1>
+    	</td>
+    </tr>
+    <tr>
+    	<td>&nbsp;</td>
+    	<td>
+    		<input type="button" name="btnjuega" id="btnjuega" value="Jugar!!" style="position:absolute;top: 310px;left: 550px; border-radius:25px 25px  "/></td>
+    	</tr>
+    <tr>    
+    <td colspan="2">
+    	<br><br>
+    	<h1><div id = "resultado" align="center"style="position:absolute;top: 610px;left: 220px; border-radius:15px 15px 15px 15px "></div></h1>
+    </td>
+
+    <img src = "img_1.png" id = "imagenPrueba" style="position:absolute;top: 300px;left: 210px; border-radius:15px 15px 15px 15px "/><br>
+    <img src = "img_2.png" id = "imagenPrueba2" style="position:absolute;top: 300px;left: 820px; border-radius:15px 15px 15px 15px " class="transition scaleX"/>
+  
+
+<embed id="sonido" src="tobymac.mp3" autostart="true" loop="true" width="0" height="0"/>
+  </tr>
+</table>
+</body>
+</html>
