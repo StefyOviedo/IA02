@@ -71,32 +71,11 @@ window.onload = function()
 				
 				var agree=confirm("Esta seguro de eliminar el registro?");
 				if (agree){
+					ind = buscaIndice(idUser);
+					listadoPersonas.splice(ind,1);
 					
-					
-					//var nuevaPersona = new persona(idUser, listadoPersonas[ind[1]].primernombre, listadoPersonas[ind[1]].primerapellido, listadoPersonas[ind[1]].email, listadoPersonas[ind[1]].fechanacimiento);
-					//listadoPersonas.pop(nuevaPersona);
-					listadoPersonas = [];
-					var indEdita = -1; //El índice de Edición...
-					if(localStorage.getItem("listado"))
-					{
-						var objTMP = eval(localStorage.getItem("listado"));
-						var id = pn = pa = em = fn = "";
-						for(var i in objTMP)
-						{
-							if(objTMP[i].identificacion != idUser)
-							{
-								var id = objTMP[i].identificacion;
-								var pn = objTMP[i].primernombre;
-								var pa = objTMP[i].primerapellido;
-								var em = objTMP[i].email;
-								var fn = objTMP[i].fechanacimiento;
-								var nuevaPersona = new persona(id, pn, pa, em, fn);
-								listadoPersonas.push(nuevaPersona);
-							}
-						}
-						localStorage.setItem("listado", JSON.stringify(listadoPersonas));
-						imprimeUsuarios();
-					}
+					localStorage.setItem("listado", JSON.stringify(listadoPersonas));
+					imprimeUsuarios();
 				}
 				else {
 					return false ;
